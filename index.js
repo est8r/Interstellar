@@ -28,8 +28,6 @@ function calcu(output) {
   if (output.media_type == "image") {
     image.html(`<img class="img" src="${output.url}"/>`);
   } else {
-    image.html(
-      `<iframe class="vd" src="${output.url}autoplay=1&mute=1"></iframe>`
-    );
+    image.html(`<iframe class="vd" src="${output.url}mute=1"></iframe>`);
   }
 }
