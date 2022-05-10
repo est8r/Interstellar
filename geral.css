@@ -42,6 +42,13 @@ header {
   color: white;
   font-weight: 300;
   font-size: 13px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.aba:hover {
+  color: rgb(168, 55, 168);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
 }
 
 .container {
@@ -55,9 +62,10 @@ header {
 .container > h1 {
   margin-bottom: 20px;
   letter-spacing: 12px;
-  font-weight: 500;
+  font-weight: 300;
   color: white;
   font-size: 55px;
+  font-family: "Jura", sans-serif;
 }
 
 p {
@@ -67,7 +75,7 @@ p {
   color: white;
 }
 
-button {
+.container > button {
   width: 200px;
   margin-top: 20px;
   border-radius: 12px;
@@ -81,10 +89,15 @@ button {
   height: 40px;
 }
 
+.container > button:hover {
+  background: rgba(148, 87, 170, 0.533);
+  transition: 0.5s ease;
+}
+
 .two {
   display: flex;
   flex-direction: row;
-  height: 760px;
+  height: 830px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -93,6 +106,91 @@ button {
 }
 
 .two > p {
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-weight: 500;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+}
+
+.options > button {
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgb(23, 23, 23);
+  color: white;
+  width: 250px;
+}
+
+.options > button:hover {
+  background-color: rgb(69, 36, 114);
+  transition: 0.3s ease;
+}
+
+.options > p {
+  color: black;
+  font-weight: 500;
+}
+
+.options > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.options > div > input {
+  border-radius: 10px 0 0 10px;
+  height: 40px;
+  width: 200px;
+  padding: 8px;
+}
+
+.options > div > button {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 50px;
+  border-radius: 0 10px 10px 0;
+}
+
+.options > div > button:hover {
+  background-color: rgb(69, 36, 114);
+  transition: 0.3s ease;
+}
+
+.info {
+  height: 600px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.473);
+  margin-top: 30px;
+}
+
+.info > h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info > img {
+  width: 400px;
+}
+
+.info > iframe {
+  width: 400px;
+  height: 270px;
+}
+
+.info > p {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 400;
   color: black;
 }
 
@@ -113,7 +211,7 @@ button {
 .left {
   width: 40%;
   margin-left: 50px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.048);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -125,8 +223,11 @@ button {
 .left > p {
   text-align: left;
   margin-top: 30px;
+  margin-bottom: 20px;
   font-weight: 400;
   color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
 }
 
 .left > h1 {
@@ -134,10 +235,16 @@ button {
   letter-spacing: 2px;
   font-weight: 600;
   color: white;
+  font-family: "Jura", sans-serif;
 }
 
 .left > h3 {
   color: rgba(190, 89, 245, 0.522);
+  font-family: "Jura", sans-serif;
+}
+.left > a {
+  color: rgb(217, 155, 250);
+  text-decoration: underline;
 }
 
 .right > img {
@@ -149,11 +256,77 @@ button {
   flex-direction: row;
   height: 760px;
   width: 100%;
+  background-color: rgb(45, 45, 45);
   align-items: center;
-  flex-direction: column;
-  background-color: red;
-  background-image: url(./img/BC7.gif);
-  background-position: 0%;
+  justify-content: center;
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.827);
+}
+
+.photo {
+  background-image: url(./img/BC10.gif);
+  height: 100%;
+  width: 60%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+}
+
+.contact > form {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact > form > input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 40px;
+  outline: 0;
+  padding: 5px;
+  background-color: transparent;
+  width: 400px;
+  border-bottom: 2px solid rgb(138, 138, 138);
+}
+
+.contact > form > .send {
+  background-color: rgb(79, 62, 156);
+  color: white;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+.contact > form > .send:hover {
+  background-color: rgb(33, 22, 82);
+  transition: 0.5s ease;
+}
+
+.contact > form > textarea {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  resize: none;
+  width: 410px;
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid rgb(132, 132, 132);
+  background-color: transparent;
+  outline: 0;
 }

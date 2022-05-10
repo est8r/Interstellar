@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interstellar</title>
   <link rel="stylesheet" href="./geral.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +35,24 @@
   </div>
 
   <div class="two">
-    <p>gerar aqui</p>
+
+    <p>escolha uma data:</p>
+
+    <div class="options">
+      <div>
+        <input name="date" type="date" min="01/06/1995" id="date">
+        <button for="date" id="show">Ver</button>
+      </div>
+      <p>ou</p>
+      <button id="day">Ver a foto do dia</button>
+    </div>
+
+    <div class="info">
+      <h2 class="title" id="title"></h2>
+      <iframe class="video" id="video" src=""></iframe>
+      <img class="image" id="image" src="" alt="">
+      <p class="description" id="description"></p>
+    </div>
   </div>
 
   <div class="three">
@@ -37,14 +60,13 @@
       <h1>A.P.O.D</h1>
       <h3>Astronomy Picture of the Day</h3>
       <p>Um dos sites mais populares da NASA é o Astronomy Picture of the Day. Na verdade, este site é um dos sites mais populares em todas as agências federais. Esse endpoint estrutura as imagens APOD e os metadados associados para que possam ser reaproveitados para outros aplicativos. Além disso, se o parâmetro concept_tags for definido como True, as palavras-chave derivadas da explicação da imagem serão retornadas. Essas palavras-chave podem ser usadas como hashtags geradas automaticamente para feeds do twitter ou instagram; mas geralmente ajudam na descoberta de imagens relevantes.</p>
+
+      <a href="https://api.nasa.gov/">Saiba Mais</a>
     </div>
     <div class="right"><img src="./img/ASTRO2.png" alt=""></div>
   </div>
 
-  <div class="four">d</div>
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./index.js"></script>
 </body>
 
