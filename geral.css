@@ -7,11 +7,29 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(20, 20, 20);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(119, 0, 255, 0.88);
+  border-radius: 20px;
+  border: 3px solid black;
 }
 
 .one {
@@ -75,7 +93,10 @@ p {
   color: white;
 }
 
-.container > button {
+.container > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   margin-top: 20px;
   border-radius: 12px;
@@ -85,11 +106,12 @@ p {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   font-weight: 600;
+  font-size: 13px;
   color: white;
   height: 40px;
 }
 
-.container > button:hover {
+.container > a:hover {
   background: rgba(148, 87, 170, 0.533);
   transition: 0.5s ease;
 }
@@ -329,4 +351,12 @@ p {
   border: 2px solid rgb(132, 132, 132);
   background-color: transparent;
   outline: 0;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  align-items: center;
+  height: 50px;
 }

@@ -13,28 +13,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c345784b4b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <div class="one">
+  <div id="one" class="one">
     <header>
-      <a class="aba" href="">HOME</a>
-      <a class="aba" href="">A APOD</a>
-      <a class="aba" href="">CONTATO</a>
+      <a class="aba" href="#one">HOME</a>
+      <a class="aba" href="#three">A APOD</a>
+      <a class="aba" href="#four">CONTATO</a>
     </header>
-    <div class="container">
+    <div id="container" class="container">
       <h1>INTERSTELLAR</h1>
       <p>
       <p>Lorem ipsum dolor sit amet. In dolor ipsum cum nihil corrupti rem officia natus vel harum sequi est alias assumenda. Et esse aspernatur et laboriosam aperiam sed internos tempora. </p>
       <p>Et suscipit amet et molestias mollitia et odit minima. Qui ratione sint ut quisquam sunt sit nihil rerum ut voluptatem voluptatum. </p>
       <p>Ut consequatur reprehenderit et modi saepe et ducimus nihil qui dicta suscipit et Quis sint? Et sint animi qui ipsam vitae et consequatur rerum. </p>
       </p>
-      <button>SABER AGORA</button>
+      <a href="#two">SABER AGORA</a>
     </div>
   </div>
 
-  <div class="two">
+  <div id="two" class="two">
 
     <p>escolha uma data:</p>
 
@@ -55,7 +56,7 @@
     </div>
   </div>
 
-  <div class="three">
+  <div id="three" class="three">
     <div class="left">
       <h1>A.P.O.D</h1>
       <h3>Astronomy Picture of the Day</h3>
@@ -64,6 +65,37 @@
       <a href="https://api.nasa.gov/">Saiba Mais</a>
     </div>
     <div class="right"><img src="./img/ASTRO2.png" alt=""></div>
+  </div>
+
+  <div id="four" class="four">
+
+    <div class="box">
+
+      <div class="photo">
+        <p></p>
+      </div>
+
+      <div class="contact">
+        <h2>Contato</h2>
+        <form action="">
+          <input placeholder="Seu nome" type="text" name="nome" id="">
+
+          <input placeholder="Digite um e-mail" type="email" name="email" id="">
+
+          <textarea placeholder="Digite sua mensagem..." name="" id="" cols="30" rows="10"></textarea>
+
+          <input class="send" value="Enviar" type="submit">
+        </form>
+
+
+        <div class="redes">
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
