@@ -51,19 +51,19 @@
   font-weight: 500;
 }
 
-.options > div {
+.options > section {
   display: flex;
   flex-direction: row;
 }
 
-.options > div > input {
+.options > section > input {
   border-radius: 10px 0 0 10px;
   height: 40px;
   width: 200px;
   padding: 8px;
 }
 
-.options > div > button {
+.options > section > button {
   background-color: black;
   color: white;
   height: 40px;
@@ -71,7 +71,7 @@
   border-radius: 0 10px 10px 0;
 }
 
-.options > div > button:hover {
+.options > section > button:hover {
   background-color: rgb(69, 36, 114);
   transition: 0.3s ease;
 }
