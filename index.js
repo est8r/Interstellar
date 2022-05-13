@@ -4,7 +4,6 @@ $("#show").click(function () {
     url: `https://api.nasa.gov/planetary/apod?api_key=SwCU3TEljvxDSa21ExdbTbCj7UKssHtLPjRZFGLC&date=${date}`,
     type: "GET",
     success: function (date) {
-      console.log(date);
       $("#image").attr("src", date.url);
       $("#description").text(date.explanation);
       $("#title").text(date.title);
@@ -28,3 +27,10 @@ function calcu(output) {
     image.html(`<img class="img" src="${output.url}"/>`);
   }
 }
+
+$("#day").click(function (date) {
+  $.ajax({
+    url: `https://api.nasa.gov/planetary/apod?api_key=SwCU3TEljvxDSa21ExdbTbCj7UKssHtLPjRZFGLC&date=${date}`,
+    type: "GET",
+  });
+});
